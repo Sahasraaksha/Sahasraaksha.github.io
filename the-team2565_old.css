@@ -1,0 +1,225 @@
+.the-team2565-container {
+  min-height: 100vh;
+}
+.the-team2565-the-team2565 {
+  width: 1440px;
+  height: 1080px;
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+.the-team2565-image {
+  top: 0px;
+  left: 0px;
+  width: 1440px;
+  height: 110px;
+  position: absolute;
+  object-fit: cover;
+  border-color: transparent;
+  background-color: rgba(0, 0, 0, 1);
+}
+.the-team2565-text {
+  top: 160px;
+  left: 579px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 64px;
+  align-self: auto;
+  font-style: normal;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 400px;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.the-team2565-text01 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  align-self: auto;
+  font-style: normal;
+  text-align: left;
+  font-weight: 400px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.the-team2565-navlink {
+  display: contents;
+}
+.the-team2565-image01 {
+  top: 0px;
+  left: 0px;
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  object-fit: cover;
+  border-color: transparent;
+}
+.the-team2565-endingbar2569 {
+  top: 977px;
+  left: 0px;
+  width: 1440px;
+  height: 103px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  background-color: rgba(0, 0, 0, 1);
+}
+.the-team2565-text02 {
+  top: 17px;
+  left: 48px;
+  color: rgba(255, 122, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: normal;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 400px;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.the-team2565-text03 {
+  color: rgba(255, 122, 0, 1);
+  height: auto;
+  align-self: auto;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.the-team2565-text09 {
+  top: 14px;
+  left: 1141px;
+  color: rgba(255, 122, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: normal;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 400px;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.the-team2565-text10 {
+  color: rgba(255, 122, 0, 1);
+  height: auto;
+  align-self: auto;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.the-team2565-image02 {
+  top: 55px;
+  left: 1234px;
+  width: 38px;
+  height: 31px;
+  position: absolute;
+  object-fit: cover;
+  border-color: transparent;
+}
+.the-team2565-image03 {
+  top: 47px;
+  left: 1163px;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  object-fit: cover;
+  border-color: transparent;
+}
+.the-team2565-image04 {
+  top: 303px;
+  left: 85px;
+  width: 160px;
+  height: 129px;
+  position: absolute;
+  object-fit: cover;
+  border-color: transparent;
+  background-color: rgba(255, 122, 0, 1);
+}
+.the-team2565-image05 {
+  top: 303px;
+  left: 452px;
+  width: 160px;
+  height: 129px;
+  position: absolute;
+  object-fit: cover;
+  border-color: transparent;
+  background-color: rgba(255, 122, 0, 1);
+}
+.the-team2565-image06 {
+  top: 303px;
+  left: 819px;
+  width: 160px;
+  height: 129px;
+  position: absolute;
+  object-fit: cover;
+  border-color: transparent;
+  background-color: rgba(255, 122, 0, 1);
+}
+.the-team2565-image07 {
+  top: 303px;
+  left: 1186px;
+  width: 160px;
+  height: 129px;
+  position: absolute;
+  object-fit: cover;
+  border-color: transparent;
+  background-color: rgba(255, 122, 0, 1);
+}
+.the-team2565-image08 {
+  top: 452px;
+  left: 19px;
+  width: 291px;
+  height: 505px;
+  position: absolute;
+  object-fit: cover;
+  border-color: transparent;
+  background-color: rgba(196, 196, 196, 1);
+}
+.the-team2565-image09 {
+  top: 452px;
+  left: 1120px;
+  width: 291px;
+  height: 505px;
+  position: absolute;
+  object-fit: cover;
+  border-color: transparent;
+  background-color: rgba(196, 196, 196, 1);
+}
+.the-team2565-image10 {
+  top: 452px;
+  left: 753px;
+  width: 291px;
+  height: 505px;
+  position: absolute;
+  object-fit: cover;
+  border-color: transparent;
+  background-color: rgba(196, 196, 196, 1);
+}
+.the-team2565-image11 {
+  top: 452px;
+  left: 386px;
+  width: 291px;
+  height: 505px;
+  position: absolute;
+  object-fit: cover;
+  border-color: transparent;
+  background-color: rgba(196, 196, 196, 1);
+}
