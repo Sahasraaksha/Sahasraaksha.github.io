@@ -1,9 +1,10 @@
 import useImage from "../UseImage";
 // import "../Resources/testimg.png"
+import featureJson from '../Resources/feature.json';
 
 const Feature = (props) => {
-    console.log(props);
-    const {imagePath,featureInfo,featureHead} = props;
+    // console.log(props);
+    const { imagePath, featureInfo, featureHead } = props;
     const { loading, error, image } = useImage(imagePath);
     const loadingImage = "Loading Image...Please wait...";
     return (loading && loadingImage) || (
@@ -16,10 +17,22 @@ const Feature = (props) => {
 };
 
 
-const Features=()=>{
+const Features = () => {
+    const { featureList } = featureJson;
+    const featuretest = [1, 2, 3];
+    console.log(featureList);
     return (<>
         <div>
-            <Feature featureHead={"Hello"} imagePath={"./Resources/testImg.jpg"} featureInfo={"This is the info..."} />
+            {featureList.map(
+                (feature) => {
+                    return (
+                        <div>
+                            <Feature featureHead={feature.featureHead} imagePath={feature.imagePath} featureInfo={feature.featureInfo} />
+                        </div>
+                    );
+                }
+            )}
+            {/* <Feature featureHead={"Hello"} imagePath={"./Resources/testImg.jpg"} featureInfo={"This is the info..."} /> */}
             <h4>Features</h4>
             <ul className="features-ul">
                 <li>AI Dynamic Feed Prioritization</li>
