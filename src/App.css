@@ -125,3 +125,38 @@
   /* justify-content: right; */
   /* background-color: #61dafb; */
 }
+
+.featureImage{
+  width: 450px;
+  scale: 0.5;
+}
+
+.teamMember{
+  background-color: violet;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: large;
+}
+
+.teamMember:hover,
+.teamMember:active{
+  opacity: 0.9;
+  transform: scale(1.05);
+  /* background-color: violet;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: large; */
+}
+
+
+.team{
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 90%;
+}

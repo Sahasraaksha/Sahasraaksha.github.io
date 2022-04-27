@@ -1,36 +1,6 @@
 import { lazy, useEffect, useState } from "react";
 import useImage from "../UseImage";
-
-
-const members = [
-    {
-        "imagePath": "./Resources/image.jpg",
-        "name": "Nachiappan S K",
-        "post": "Co-Founder",
-        "key": 1
-    },
-
-    {
-        "imagePath": "./Resources/image.jpg",
-        "name": "Parithimalan A",
-        "post": "Co-Founder",
-        "key": 2
-    },
-
-    {
-        "imagePath": "./Resources/image.jpg",
-        "name": "Sriram G",
-        "post": "Co-Founder",
-        "key": 3
-    },
-
-    {
-        "imagePath": "./Resources/image.jpg",
-        "name": "Vikram Adithya C P",
-        "post": "Co-Founder",
-        "key": 4
-    }
-]
+import dataJson from "../Resources/data.json";
 
 const TeamMember = ({ memberInfo }) => {
     const { loading, error, image } = useImage(memberInfo.imagePath);
@@ -46,6 +16,7 @@ const TeamMember = ({ memberInfo }) => {
     );
 };
 const Team = () => {
+    const {members} = dataJson;
     return (
         <div>
             <h2>Meet Our Team</h2>

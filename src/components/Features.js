@@ -1,6 +1,6 @@
 import useImage from "../UseImage";
 // import "../Resources/testimg.png"
-import featureJson from '../Resources/feature.json';
+import featureJson from '../Resources/data.json';
 
 const Feature = (props) => {
     // console.log(props);
@@ -10,7 +10,7 @@ const Feature = (props) => {
     return (loading && loadingImage) || (
         <div>
             <h4>{featureHead}</h4>
-            {image && <img className="teamImage" src={image}></img>}
+            {image && <img className="featureImage" src={image}></img>}
             <p>{featureInfo}</p>
         </div>
     );
@@ -23,17 +23,17 @@ const Features = () => {
     console.log(featureList);
     return (<>
         <div>
+            {/* <Feature featureHead={"Hello"} imagePath={"./Resources/testImg.jpg"} featureInfo={"This is the info..."} /> */}
+            <h4>Features</h4>
             {featureList.map(
                 (feature) => {
                     return (
                         <div>
-                            <Feature featureHead={feature.featureHead} imagePath={feature.imagePath} featureInfo={feature.featureInfo} />
+                            <Feature key={feature.key} featureHead={feature.featureHead} imagePath={feature.imagePath} featureInfo={feature.featureInfo} />
                         </div>
                     );
                 }
             )}
-            {/* <Feature featureHead={"Hello"} imagePath={"./Resources/testImg.jpg"} featureInfo={"This is the info..."} /> */}
-            <h4>Features</h4>
             <ul className="features-ul">
                 <li>AI Dynamic Feed Prioritization</li>
                 <li>Anonymized Face Recognition</li>
