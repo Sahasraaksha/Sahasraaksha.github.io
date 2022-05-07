@@ -1,7 +1,7 @@
 const Solution = () => {
     return (
         <div>
-            <h4>Solution</h4>
+            <h1>Solution</h1>
             <p>
                 Make AI power up your security system...
                 AI Based Smart assistant which would help you catch miscellaneous/unintended activites in real time.

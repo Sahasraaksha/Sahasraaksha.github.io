@@ -1,40 +1,40 @@
 import About from "./About";
 import Contact from "./Contact";
 import Features from "./Features";
-import Help from "./Help";
+// import Help from "./Help";
 import Home from "./Home";
 import Solution from "./Solution";
 import Team from "./Team";
-import WhyUs from "./WhyUs";
+// import WhyUs from "./WhyUs";
 
 
 const Page = () => {
     return (
         <div>
-            <div id="home">
+            <section id="home">
                 <Home/>
-            </div>
-            <div id="solution">
+            </section>
+            <section id="solution">
                 <Solution/>
-            </div>
-            <div id="features">
+            </section>
+            <section id="features">
                 <Features/>
-            </div>
-            <div id="whyUs">
+            </section>
+            {/* <section id="whyus">
                 <WhyUs/>
-            </div>
-            <div id="about">
+            </section> */}
+            <section id="about">
                 <About/>
-            </div>
-            <div id="team">
+            </section>
+            <section id="team">
                 <Team/>
-            </div>
-            <div id="contact">
-                <Contact/>
-            </div>
-            <div id="help">
+            </section>
+            {/* <section id="help">
                 <Help/>
-            </div>
+            </section> */}
+            <footer id='contact'>
+                <Contact/>
+            </footer>
         </div>
     );    
 }

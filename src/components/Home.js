@@ -1,11 +1,11 @@
 const Home = () => {
     return (
         <div>
-            <h4>Sahasraaksha</h4>
+            <h1>Sahasraaksha</h1>
             <p>
                 Sahasraaksha is the way through which we are linking the three steps of CCTV based security (physical security, surveillance, and video backups) and adding a new, and what we assume to be the future crucial part of surveillance, analytics.
             </p>
-            <h4>AI in CCTV surveillance</h4>
+            <h1>AI in CCTV surveillance</h1>
             <p>
                 Even though surveillance cameras are now ubiquitous they are rarely made use of. There has to always be at least one person surveilling the live feeds 24/7 to stop any untoward incident from happening.
 

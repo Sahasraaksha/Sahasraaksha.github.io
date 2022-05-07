@@ -19,7 +19,7 @@ const Team = () => {
     const {members} = dataJson;
     return (
         <div>
-            <h2>Meet Our Team</h2>
+            <h1>Meet Our Team</h1>
             <div className="Row">
                 <div className="team col-3">
                     {
