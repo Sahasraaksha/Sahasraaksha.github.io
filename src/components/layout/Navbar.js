@@ -15,9 +15,9 @@ const Navbar = () => {
                     <Link className='navbar-link' to='features' smooth='true'>
                         <span>Features</span>
                     </Link>
-                    <Link className="navbar-link" to='whyus' smooth='true'>
+                    {/* <Link className="navbar-link" to='whyus' smooth='true'>
                         <span>Why Us</span>
-                    </Link>
+                    </Link> */}
                     <Link className="navbar-link" to='about' smooth='true'>
                         <span>About Us</span>
                     </Link>
@@ -27,9 +27,9 @@ const Navbar = () => {
                     <Link className="navbar-link" to='contact' smooth='true'>
                         <span>Contact</span>
                     </Link>
-                    <Link className="navbar-link" to='help' smooth='true'>
+                    {/* <Link className="navbar-link" to='help' smooth='true'>
                         <span>Help</span>
-                    </Link>
+                    </Link> */}
                 </div>
             </nav>
         </div>
