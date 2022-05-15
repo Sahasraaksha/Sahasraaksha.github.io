@@ -1,0 +1,59 @@
+{
+    "featureList": [
+        {
+            "key": 1,
+            "featureHead": "Dynamic Feed Prioritization",
+            "imagePath": "./Resources/dfp.png",
+            "featureInfo": "It is impossible for 24/7 human monitoring of all cameras, moreover, not all cameras feeds are important since only a few cameras might contain objects of interest with there being a possibility of an anomalous event happening.Hence in our solution. the user can choose to view only 4 out of the 30 cameras which are displayed in the priority screen based on the importance of the events and objects detected in the various cameras. The priority order changes dynamically based on the latest importance value and thus the user shall see the 4 critical cameras alone properly at any given time. This algorithm can further be improved with action identification."
+        },{
+            "key": 2,
+            "featureHead": "Person Finding Algorithm",
+            "imagePath": "./Resources/pfa.png",
+            "featureInfo": "When the need to locate a person arises, knowing the last seen location would be very helpful in starting the search. Though, face recognition is one of the solutions, however, surveillance cameras are not designed for face recognition. It is less probable that the exact person’s face will be captured with high resolution and might lead to high error rates. In this method, we collect all the persons spotted and create database out of that. In case of wanting to find a person, if the description of the person is known (such as clothing articles and gender), then the exact person can be searched for and retrieved. The more specifically detailed the description, the better the result."
+        },{
+            "key": 3,
+            "featureHead": "Vehicle No Parking Tracker",
+            "imagePath": "./Resources/vnpt.png",
+            "featureInfo": "If vehicles are parked in a no-parking zone, it obstructs the way for many other vehicles causing a major traffic block. Since its very tiring for security personnel to keep track of such vehicles, Our solution processes the CCTV feeds for the stationary vehicles and the alerts are generated for vehicles which are stagnant for more than the period of time set by the user. This threshold time can be modified for a camera-to-camera basis, depending upon the use case for the location of the camera, in the settings page"
+        },{
+            "key": 4,
+            "featureHead": "Human Intrusion Detection",
+            "imagePath": "./Resources/hid.png",
+            "featureInfo": "Real-time alerts are provided in the form of both in-app notification and are sent as Telegram messages. Reduced false alarms as compared to motion detector sensors (due to only humnans being alerted) A tighter security since It’s not always possible to guard all the restricted zones efficiently. Thus, the CCTV cameras there are enabled with the human detection and the corresponding personnel are alerted whenever a person enters the restricted zone."
+        },{
+            "key": 5,
+            "featureHead": "Footfall Counting",
+            "imagePath": "./Resources/ffc.png",
+            "featureInfo": "Counting the accurate number of people who are entering the area, will prove very useful for crowd management and budgetary purposes. Though counting can be done primitively using human detection sensors on the entrances, it is not accurate as it does not account for persons who may stand near the entrance for a long time and those who may re-enter the same place multiple times. We define the region of interest at the entrances and perform re-identification. This way only those persons who enter/exit through that region are considered for the count. Our model re-identifies people, using deep learning, who come again and again through the entrance; due to which the duplicates are not counted. This way, the count shown is the more accurate."
+        }
+    ],
+    "members":[
+        {
+            "imagePath": "./Resources/image1.jpg",
+            "name": "Nachiappan S K",
+            "post": "Co-Founder",
+            "key": 1
+        },
+    
+        {
+            "imagePath": "./Resources/image2.jpg",
+            "name": "Parithimalan A",
+            "post": "Co-Founder",
+            "key": 2
+        },
+    
+        {
+            "imagePath": "./Resources/image3.jpg",
+            "name": "Sriram G",
+            "post": "Co-Founder",
+            "key": 3
+        },
+    
+        {
+            "imagePath": "./Resources/image4.jpg",
+            "name": "Vikram Adithya C P",
+            "post": "Co-Founder",
+            "key": 4
+        }
+    ]
+}
