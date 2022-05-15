@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksahasraaksha_github_io=self.webpackChunksahasraaksha_github_io||[]).push([[25],{98025:function(a,s,e){a.exports=e.p+"static/media/testImg.ca8ede7f4b837407f6ab.jpg"}}]);

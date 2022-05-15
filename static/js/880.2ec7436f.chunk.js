@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksahasraaksha_github_io=self.webpackChunksahasraaksha_github_io||[]).push([[880],{69880:function(s,a,h){h.r(a);var e=h(80184);a.default=function(){return(0,e.jsxs)("div",{children:[(0,e.jsx)("h4",{children:"Why Us...?"}),(0,e.jsx)("p",{children:"Hello world"})]})}}}]);
+//# sourceMappingURL=880.2ec7436f.chunk.js.map
