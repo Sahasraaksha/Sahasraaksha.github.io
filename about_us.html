@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Bootstrap demo</title>
+
+		<!-- Fonts -->
+		<!-- Source Sans Pro -->
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+
+		<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous"> 
+		<!-- CSS -->
+		<!-- Bootstrap CDN -->
+		<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="plugins/themefisher-fonts/themefisher-fonts.css">
+		<link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+		<!-- Responsive Stylesheet -->
+		<link rel="stylesheet" href="styles.css">
+
+
+		<!-- JQUERY -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			// handle links with @href started with '#' only
+			$(document).on('click', 'a[href^="#"]', function(e) {
+				// target element id
+				var id = $(this).attr('href');
+		
+				// target element
+				var $id = $(id);
+				if ($id.length === 0) {
+					return;
+				}
+				
+				// prevent standard hash navigation (avoid blinking in IE)
+				e.preventDefault();
+				
+				// top position relative to the document
+				var pos = $id.offset().top;
+				
+				// animated top scrolling
+				$('body, html').animate({scrollTop: pos});
+			});
+		</script>		  
+	</head>
+
+    <body>
+        <!-- navigation -->
+		<header>
+			<br>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+					<a class="navbar-brand" href="#">Sahasraaksha</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+	
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto text-center text-lg-left">
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html">HOME</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about">ABOUT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html#features" id="button-features">FEATURES</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html#contact">CONTACT</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+
+        <!-- about us -->
+        
+		<!-- about us -->
+		<section class="about-list about-section" id="about">
+			<div class="container">
+                <br><br>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="heading">
+							<h2>Meet the Team</h2>
+                            <p> Sahasraaksha initially started as a personal side project based on the curiosity felt on just how 
+                                much more effective can existing security be made by introducing AI into it. Even though surveillance cameras 
+                                are now ubiquitous they are rarely made use of. There has to always be at least one person surveilling the live 
+                                feeds 24/7 to stop any untoward incident from happening. Hence, we propose an advanced AI-based solution making 
+                                use of state-of-the-art deep learning approaches to provide various features that help in better understanding 
+                                and managing the information one receives from the surveillance feeds, thus, leading to a qualitatively 
+                                enhancement in security</p>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="team-member">
+							<div class="team-img">
+								<img src="images/sriram.jpg" alt="team member" class="img-responsive" height="400px">
+							</div>
+							<div class="team-hover">
+								<div class="desk">
+									<h4>Hi There !</h4>
+									<p>I love to introduce myself as a hardcore Web Designer.</p>
+								</div>
+								<div class="s-link">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-title">
+							<h5>Sriram Ganesh</h5>
+							<span>Co-founder</span>
+						</div>
+					</div>
+					<div class="col-md-4 ">
+						<div class="team-member">
+							<div class="team-img">
+								<img src="images/vikram.jpg" alt="team member" class="img-responsive" height="400px" width="100%">
+							</div>
+							<div class="team-hover">
+								<div class="desk">
+									<h4>Hello World</h4>
+									<p>I love to introduce myself as a hardcore Web Designer.</p>
+								</div>
+								<div class="s-link">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-title">
+							<h5>Vikramaditya</h5>
+							<span>Co-founder</span>
+						</div>
+					</div>
+					<div class="col-md-4 ">
+						<div class="team-member">
+							<div class="team-img">
+								<img src="images/parithi.jpg" alt="team member" class="img-responsive" height="400px" width="100%">
+							</div>
+							<div class="team-hover">
+								<div class="desk">
+									<h4>I love to design</h4>
+									<p>I love to introduce myself as a hardcore Web Designer.</p>
+								</div>
+								<div class="s-link">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-title">
+							<h5>Parithimalan</h5>
+							<span>Co-founder</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="team-member">
+							<div class="team-img">
+								<img src="images/nachi.jpg" alt="team member" class="img-responsive" height="400px" width="100%">
+							</div>
+							<div class="team-hover">
+								<div class="desk">
+									<h4>I love to design</h4>
+									<p>I love to introduce myself as a hardcore Web Designer.</p>
+								</div>
+								<div class="s-link">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-title">
+							<h5>Nachiappan</h5>
+							<span>Co-founder</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="team-member">
+							<div class="team-img">
+								<img src="images/prasanna.jpg" alt="team member" class="img-responsive" height="400px" width="100%">
+							</div>
+							<div class="team-hover">
+								<div class="desk">
+									<h4>I love to design</h4>
+									<p>I love to introduce myself as a hardcore Web Designer.</p>
+								</div>
+								<div class="s-link">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-title">
+							<h5>Prasanna</h5>
+							<span>Developer</span>
+						</div>
+					</div>
+	
+				</div>
+			</div>
+		</section>
+    </body>
+
+</html>

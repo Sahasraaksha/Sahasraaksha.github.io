@@ -26,6 +26,11 @@ h1,
 	line-height: 56px;
 }
 
+.container {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
 h2,
 .h2 {
 	font-size: 30px;
@@ -62,10 +67,6 @@ a {
 
 .mt-100 {
 	margin-top: 100px;
-}
-
-.bg-1 {
-	background-image: url(../images/call-to-action.jpg);
 }
 
 .bg-orange {
@@ -121,6 +122,10 @@ a:active {
 
 .mb-40 {
 	margin-bottom: 40px;
+}
+
+.pk_video {
+	background-color: red !important; /* or whatever you want */
 }
 
 /*--
@@ -219,7 +224,6 @@ a:active {
 	margin-top: 15px;
 }
 
-
 /*--
     service start
 --*/
@@ -258,65 +262,137 @@ a:active {
 /*--
     call-to-action start
 --*/
-.call-to-action {
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
+footer a {
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
 }
 
-.input-group {
-	margin-top: 30px;
-	position: relative;
+footer a:hover,
+footer a:focus {
+	text-decoration: none;
 }
 
-.input-group .btn-submit {
-	padding: 10.5px 40px !important;
-	position: absolute;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-	top: 0;
-	right: 0;
-}
-
-.input-group input {
-	height: 50px;
-	border-radius: 40px;
-	border: none;
-	padding-left: 15px;
-	box-shadow: none;
-	display: table-cell;
-}
-
-.footer-menu a {
-	font-size: 14;
-	font-weight: 700;
-	color: #444;
-	padding: 10px;
-}
 
 footer {
-	text-align: center;
-	background: #f4f4f4;
-	padding: 50px 0px;
+	background: #212529;
 }
 
-footer .footer-logo {
-	color: #555;
-	display: block;
+
+/* -- About us -- */
+.heading-title {
+    margin-bottom: 100px;
+}
+.text-center {
+    text-align: center;
+}
+.heading-title h3 {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+.p-top-30 {
+    padding-top: 30px;
+}
+.half-txt {
+    width: 60%;
+    margin: 0 auto;
+    display: inline-block;
+    line-height: 25px;
+    color: #7e7e7e;
+}
+.text-uppercase {
+    text-transform: uppercase;
 }
 
-footer p.copyright-text {
-	font-weight: 300;
-	font-size: 12px;
-	color: #888;
-	letter-spacing: 3px;
-	margin-top: 15px;
+.team-member, .team-member .team-img {
+    position: relative;
+}
+.team-member {
+    overflow: hidden;
+}
+.team-member, .team-member .team-img {
+    position: relative;
 }
 
-footer p.copyright-text a {
-	color: #282828;
+.team-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    border: 20px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.90);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
-
-footer p.copyright-text a:hover {
-	text-decoration: none;
+.team-member:hover .team-hover .desk {
+    top: 35%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+    opacity: 1;
+}
+.team-hover .desk {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translateY(-55%);
+    -ms-transform: translateY(-55%);
+    transform: translateY(-55%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    padding: 0 20px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+    text-align: center;
+    color: #222;
+}
+.team-member:hover .team-hover .s-link {
+    bottom: 10%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+    opacity: 1;
+}
+.team-hover .s-link {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translateY(45%);
+    -ms-transform: translateY(45%);
+    transform: translateY(45%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    font-size: 35px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+    text-align: center;
+    color: #222;
+}
+.team-member .s-link a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 16px;
+}
+.team-title {
+    position: static;
+    padding: 20px 0;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: 100%;
+}
+.team-title h5 {
+    margin-bottom: 0px;
+    display: block;
+    text-transform: uppercase;
+}
+.team-title span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #a5a5a5;
+    letter-spacing: 1px;
 }

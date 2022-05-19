@@ -11,8 +11,10 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
 
-
-
+		<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous"> 
 		<!-- CSS -->
 		<!-- Bootstrap CDN -->
 		<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
@@ -21,6 +23,32 @@
 		<link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
 		<!-- Responsive Stylesheet -->
 		<link rel="stylesheet" href="styles.css">
+
+
+		<!-- JQUERY -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			// handle links with @href started with '#' only
+			$(document).on('click', 'a[href^="#"]', function(e) {
+				// target element id
+				var id = $(this).attr('href');
+		
+				// target element
+				var $id = $(id);
+				if ($id.length === 0) {
+					return;
+				}
+				
+				// prevent standard hash navigation (avoid blinking in IE)
+				e.preventDefault();
+				
+				// top position relative to the document
+				var pos = $id.offset().top;
+				
+				// animated top scrolling
+				$('body, html').animate({scrollTop: pos});
+			});
+		</script>		  
 	</head>
 
 
@@ -29,7 +57,7 @@
 		<header>
 			<br>
 			<div class="container">
-				<nav class="navbar navbar-expand-lg navbar-light bg-white">
+				<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
 					<a class="navbar-brand" href="#">Sahasraaksha</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,10 +70,10 @@
 								<a class="nav-link" href="#">HOME</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#about">ABOUT</a>
+								<a class="nav-link" href="./about_us.html">ABOUT</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#service">SERVICE</a>
+								<a class="nav-link" href="#features" id="button-features">FEATURES</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#contact">CONTACT</a>
@@ -58,7 +86,7 @@
 
 
 		<!-- hero area -->
-		<section class="section">
+		<section class="section" id="home">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 text-center mb-5 mb-md-0">
@@ -83,7 +111,7 @@
 
 
 		<!-- features -->
-		<section class="feature-list section">
+		<section class="feature-list section" id="features">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -116,28 +144,30 @@
 				<div class="row">
 					<div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
 						<div class="content">
-							<h4 class="subheading">Automatic number-plate recognition</h4>
-							<p>Automatic number-plate recognition is a technology that uses optical character recognition on images to read vehicle registration 
-								plates to create vehicle location data. Our Solution performs ANPR on all the observed vehicles that enter the tracked zones. ANPR 
-								captures image of the number plates from vehicles moving at high speeds and in stop-n-go scenarios & then decodes it into alpha-numeric values.</p>
+							<h4 class="subheading">Human Intrusion Detection</h4>
+							<p>Real-time alerts are provided in the form of both in-app notification and are sent as Telegram messages
+								Reduced falls alarms as compared to motion detector sensors (due to only humnans being alerted)
+								A tighter security since It's not always possible to guard all the restricted zones efficiently. 
+								Thus, the CCTV cameras there are enabled with the human detection and the corresponding personnel are alerted 
+								whenever a person enters the restricted zone</p>
 						</div>
 					</div>
 					<div class="col-md-6 order-md-2 order-1 text-center mb-5 mb-lg-0">
 						<!-- <img class="img-fluid" src="images/showcase-3.png" alt=""> -->
-						<video width="500" height="400" autoplay muted loop>
-							<source src="images/for_animation.mp4" type="video/mp4">
-							<source src="images/for_animation.webm" type="video/webm">
+						<video width="600" height="500" autoplay muted loop>
+							<source src="images/intrusion.mp4" type="video/mp4">
+							<source src="images/intrusion.webm" type="video/webm">
 						  Your browser does not support the video tag.
-						  </video> 
+						</video> 
 					</div>
 				</div>
 				<br>
 				<div class="row mb-40">
 					<div class="col-md-6 text-center mb-5 mb-lg-0" style="padding-left: 0px;padding-right: 0px;">
 						<!-- <img class="img-fluid" src="images/showcase-4.png" alt=""> -->
-						<video width="500" height="400" autoplay muted loop>
-							<source src="images/ramanujan_back_dypr.mp4" type="video/mp4">
-							<source src="images/ramanujan_back_dypr.webm" type="video/webm">
+						<video width="600" height="500" autoplay muted loop>
+							<source src="images/find_people.mp4" type="video/mp4">
+							<source src="images/find_people.webm" type="video/webm">
 						  Your browser does not support the video tag.
 						  </video> 
 					</div>
@@ -162,16 +192,79 @@
 						</div>
 					</div>
 					<div class="col-md-6 order-md-2 order-1 text-center mb-5 mb-lg-0">
-						<!-- <img class="img-fluid" src="images/showcase-3.png" alt=""> -->
-						<video width="500" height="400" autoplay muted loop>
-							<source src="images/for_animation.mp4" type="video/mp4">
-							<source src="images/for_animation.webm" type="video/webm">
+						<!-- <img class="img-fluid" src="images/analytics.png" alt=""> -->
+						<video width="600" height="500" autoplay muted loop>
+							<source src="images/analytics.mp4" type="video/mp4">
+							<source src="images/analytics.webm" type="video/webm">
 						  Your browser does not support the video tag.
-						  </video> 
+						  </video>
+					</div>
+				</div>
+				<br>
+				<div class="row ">
+					<div class="col-md-6 text-center mb-lg-0" style="padding-left: 0px;padding-right: 0px;">
+						<!-- <img class="img-fluid" src="images/showcase-4.png" alt=""> -->
+						<video width="600" height="500" autoplay muted loop styles="background-color:'orange'">
+							<source src="images/anpr.mp4" type="video/mp4">
+							<source src="images/anpr.webm" type="video/webm">
+						  Your browser does not support the video tag.
+						</video>  
+					</div>
+					<div class="col-md-6 align-self-center text-center text-md-left">
+						<div class="content">
+							<h4 class="subheading">Automatic number-plate recognition</h4>
+							<p>Automatic number-plate recognition is a technology that uses optical character recognition on images to read vehicle registration 
+								plates to create vehicle location data. Our Solution performs ANPR on all the observed vehicles that enter the tracked zones. ANPR 
+								captures image of the number plates from vehicles moving at high speeds and in stop-n-go scenarios & then decodes it into alpha-numeric values.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
+
+	    <!-- FOOTER -->
+    	<footer class="w-100 py-4" id="contact"> <!-- flex shrink 0-->
+			<div class="container py-4">
+				<div class="row gy-4 gx-5">
+					<div class="col-lg-4 col-md-6">
+						<h5 class="h1 text-white">Sahasraaksha</h5>
+						<p class="small text-muted">AI CCTV surveillance for the web</p>
+						<p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="#">https://sahasraaksha.github.io/</a></p>
+					</div>
+					<div class="col-lg-2 col-md-6">
+						<h5 class="text-white mb-3">Quick links</h5>
+						<ul class="list-unstyled text-muted">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#features">Features</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6">
+						<h5 class="text-white mb-3">Contact Us</h5>
+						<ul class="list-unstyled text-muted">
+							<li><a href="tel:+919080877386" className='muiIcons'><i class="fas fa-phone-alt"></i> 9080877386</a></li>
+							<li><a href="https://api.whatsapp.com/send?phone=919080877386&text=Hey%20!!%20I%20would%20like%20to%20know%20more%20about%20sahasraaksha" className='muiIcons'><i class="fa-brands fa-whatsapp"></i> 9080877386</a></li>
+							<li><a href="tel:+918300843618" className='muiIcons'><i class="fas fa-phone-alt"></i> 918300843618</a></a></li>
+							<li><a href="mailto:sahasraaksha1000@gmail.com" className='muiIcons'></a><i class="fas fa-envelope"></i> sahasraaksha1000</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<iframe
+							src="https://www.youtube.com/embed/p_2bkGMdKdk"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+							alt="VideoContainer33"
+							class="home-page32-image1"
+						>
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</footer>
 	
 
 		<script src="plugins/jquery-2.1.1.min.js"></script>
