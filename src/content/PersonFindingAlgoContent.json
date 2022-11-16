@@ -1,0 +1,4 @@
+{
+    "title": "Person Finding Algorithm",
+    "text": "In this method, we collect all the persons spotted and create database out of that. In case of wanting to find a person, if the description of the person is known (such as clothing articles and gender), then the exact person can be searched for and retrieved. The more specifically detailed the description, the better the result."
+}

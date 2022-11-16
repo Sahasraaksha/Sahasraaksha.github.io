@@ -1,0 +1,4 @@
+{
+    "title": "Vehicle No Parking Tracker",
+    "text": "Get no parking alerts in specified zones. Our solution processes the CCTV feeds for the stationary vehicles and the alerts are generated for vehicles which are stagnant for more than the period of time set by the user. This threshold time can be modified for a camera-to-camera basis, depending upon the use case for the location of the camera, in the settings page."
+}
